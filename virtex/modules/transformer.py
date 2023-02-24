@@ -7,7 +7,7 @@ class Transformer(nn.Module):
     def __init__(self):
         super().__init__()
         # Initializes Decoder + LM Head
-        self.t5 = T5ForConditionalGeneration.from_pretrained("t5-base")
+        self.t5 = T5ForConditionalGeneration.from_pretrained("VietAI/vit5-base")
         
         self.vit = timm.create_model('vit_base_patch16_224',pretrained=True,num_classes=0)
 
