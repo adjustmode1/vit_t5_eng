@@ -11,7 +11,7 @@ class Transformer(nn.Module):
         
         self.vit = timm.create_model('vit_base_patch16_224',pretrained=True,num_classes=0)
 
-        self.tokenizer = T5Tokenizer.from_pretrained("t5-base")
+        self.tokenizer = T5Tokenizer.from_pretrained("VietAI/vit5-base")
 
 
     def encode_image(self, x):

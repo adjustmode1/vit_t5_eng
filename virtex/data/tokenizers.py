@@ -19,7 +19,7 @@ class SentencePieceBPETokenizer:
         self.model_path = model_path
 
         # Load pretrained tokenizer model.
-        self.tokenizer = T5Tokenizer.from_pretrained("t5-base")
+        self.tokenizer = T5Tokenizer.from_pretrained("VietAI/vit5-base")
 
     def encode(self, text: str) -> List[int]:
         r"""Convert a text string to a list of integer token ids."""
